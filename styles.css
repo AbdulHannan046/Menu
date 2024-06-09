@@ -1,0 +1,52 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+.section {
+    padding: 100px;
+    margin-top: 60px; /* To prevent content from being hidden behind the fixed navbar */
+    height: 100vh; /* Just for demonstration, you can remove this */
+}
+
+#home { background: #f4f4f4; }
+#about { background: #eaeaea; }
+#services { background: #dcdcdc; }
+#contact { background: #ccc; }
